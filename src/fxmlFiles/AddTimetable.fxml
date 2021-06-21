@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="addTimetablePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddTimetableController">
+   <children>
+      <Label layoutX="221.0" layoutY="110.0" text="Pacjent:" />
+      <Label fx:id="patientLabel" layoutX="271.0" layoutY="110.0" text="Label" />
+      <Label layoutX="180.0" layoutY="132.0" text="Data urodzenia:" />
+      <Button fx:id="backToMenu" layoutX="495.0" layoutY="355.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="25.0" prefWidth="84.0" text="Powrót">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0">
+               <image>
+                  <Image url="@../images/BackIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="birthdayLabel" layoutX="271.0" layoutY="132.0" text="Label" />
+      <Label layoutX="226.0" layoutY="157.0" text="Lekarz:" />
+      <ChoiceBox fx:id="doctorsChoiceBox" layoutX="271.0" layoutY="152.0" prefWidth="150.0" />
+      <Label layoutX="235.0" layoutY="185.0" text="Data:" />
+      <DatePicker fx:id="dateField" layoutX="270.0" layoutY="181.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="updateButton" layoutX="495.0" layoutY="323.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="25.0" prefWidth="84.0" text="Zapisz">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="idField" editable="false" layoutX="372.0" layoutY="56.0" visible="false" />
+      <TextField fx:id="doctorsId" editable="false" layoutX="196.0" layoutY="336.0" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+   <children>
+      <Button fx:id="wyswietlPacjenta" layoutX="31.0" layoutY="28.0" mnemonicParsing="false" onAction="#viewPatient" prefHeight="126.0" prefWidth="125.0" text="Wyświetl Pacjenta" />
+      <Button fx:id="dodajPacjenta" layoutX="166.0" layoutY="28.0" mnemonicParsing="false" onAction="#addPatient" prefHeight="126.0" prefWidth="125.0" text="Dodaj Pacjenta" />
+      <Button fx:id="logOut" layoutX="33.0" layoutY="347.0" mnemonicParsing="false" onAction="#logOut" text="Wyloguj" />
+      <Pane fx:id="adminTools" disable="true" layoutX="314.0" layoutY="28.0" prefHeight="350.0" prefWidth="264.0" visible="false">
+         <children>
+            <Button fx:id="wyswietlPracownika" layoutX="68.0" layoutY="47.0" mnemonicParsing="false" onAction="#viewWorker" prefHeight="110.0" prefWidth="149.0" text="Wyświetl Pracowników" />
+            <Button fx:id="dodajPracownika" layoutX="68.0" layoutY="163.0" mnemonicParsing="false" onAction="#addWorker" prefHeight="110.0" prefWidth="149.0" text="Dodaj Pracownika" />
+            <Label layoutX="87.0" layoutY="14.0" text="Panel Administratora" />
+         </children>
+      </Pane>
+      <Button fx:id="timetable" layoutX="31.0" layoutY="160.0" mnemonicParsing="false" onAction="#goToTimetable" prefHeight="126.0" prefWidth="125.0" text="Terminarz" />
+   </children>
+</AnchorPane>

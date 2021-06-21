@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="viewPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PatientViewController">
+   <children>
+       <Button fx:id="backToMenu" layoutX="433.0" layoutY="342.0" mnemonicParsing="false" onAction="#backToMenu" text="Powrót">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/BackIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TableView fx:id="tableView" layoutX="90.0" layoutY="29.0" prefHeight="253.0" prefWidth="421.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" editable="false" prefWidth="140.0" resizable="false" text="Imię" />
+          <TableColumn fx:id="surnameColumn" prefWidth="140.0" resizable="false" text="Nazwisko" />
+            <TableColumn fx:id="birthdayColumn" prefWidth="140.0" resizable="false" text="Data urodzenia" />
+        </columns>
+      </TableView>
+      <Button fx:id="goToDetails" layoutX="433.0" layoutY="308.0" mnemonicParsing="false" onAction="#goToDetails" prefHeight="25.0" prefWidth="78.0" text="Szczegóły" />
+      <TextField fx:id="nameField" layoutX="90.0" layoutY="324.0" prefHeight="25.0" prefWidth="100.0" promptText="Szukaj" />
+      <Button fx:id="addVisit" layoutX="246.0" layoutY="332.0" mnemonicParsing="false" onAction="#addVisit" prefHeight="29.0" prefWidth="115.0" text="Dodaj wizytę">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="addTimetable" layoutX="246.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToAddTimetable" prefHeight="29.0" prefWidth="115.0" text="Dodaj termin">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="visitHistory" layoutX="246.0" layoutY="363.0" mnemonicParsing="false" onAction="#checkHistory" prefHeight="29.0" prefWidth="115.0" text="Historia wizyt" />
+   </children>
+</AnchorPane>
